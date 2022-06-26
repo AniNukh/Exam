@@ -1,0 +1,201 @@
+# Քննություն 
+ 
+1.
+
+Primitive types / Պրիմիտիվ թայփեր․
+    number     - թվեր
+    string     - տեքստ
+    boolean    - լոգիկա (true, false)
+    null       - ոչինչ
+    undefined  - հայտարարված չէ 
+    symbol     -
+    bigint     - աշխատանք շատ մեծ թվերի 
+Referance types / Հղումային տիպեր․
+    object
+    array
+    function
+    nwe Date()
+    new RegExp()
+    new Error()
+
+2. && 3.
+
+    Let , Const , Var
+
+    Var փոփոխականով աշխատել են մինչև ES6 ը, 2015 ից հետո ավելացել են Let և Const փոփոխականները, JS ը ավելի 
+մոտեցնելով դասական ծրագրավորման լեզուներին։
+Var ի սահմանը ֆունկցիան է, որի մեջ ստեղծվել է, հասանելի է ամեն տեղ այդ ֆունկցիայի մեջ;
+Let ի ու Const ի սահմանը բլոք սկոպն է, որի մեջ ստեղծվել են, հետևաբար հասանելի են տվյալ սկոպում։
+
+4․
+
+Block scop      {}
+    Իր մեջ պահում է Const ը և Let ը։ Var ը և գլոբալ փոփոխականը բլոք սկոպից դուրս են գալիս։
+Function scope  (){}
+     Իր մեջ պահում է և Const ը և Let ը և Var ը։ Գլոբալ փոփոխականը ֆանքշն սկոպից դուրս է գալիս։
+     ֆանքշն սկոպը բլոկից ավելի խիստ է։ 
+5.
+ Գլոբալ և Var փոփոխականներև բավականին վտանգավոր են կոդի մեջ, քանի որ դուրս են գալիս բլոք սկոպից, իսկ գլոբալը
+    նաև ֆանքշնից, այսինքն որևէև անվտանգության և ապահովության մասին խոսք լինել չի կարող լինել։ 
+
+6.
+    Function declaration կարող ենք ստեղծել որտեղ ուզենք և կանչել որտեղ ուզենք, ֆանքշնը բաբլա լինում (բարձրանում կոդի վերև) 
+    Function expression                               \  փոխանցում ենք ինչ որ փոփոխականի, սրանք հղումային թայփեր են։ 
+    arrow Function  - ES6, սեփական կոնտեքստ չունի     /  
+7․
+    x++ , x--  Պոստֆիքս, առաջին անգամ աշխատելուց վերադարձնում է դիֆոլթ արժեքը \  տարբերությունը երևում է միայն ինչ որ
+    ++x , --x  Պրեֆիքս , մինգամից վերադարձնում է +1 արժեք                     /  տեղ աշխատացնելուց։
+
+8 . 
+   undefined ը տիպ է, որը արժեք չունի։  \  Երկուսն էլ ոչ մի բանից չեն ժառանգվում են։ 
+   null ը դատարկ օբջեքթ է։              /
+
+9.
+HTML-ում script թեգը միացնելու ամենահարմար վայրը դա </body> ից անմիջապես վերև է,քանի որ ճիշտ է որ ինտերպրիտատորը ամբողջը
+կարդալով իջնի, վերջում նոր սքրիփթը, Հակառակ դեպքում դոմը կարող է բլոկ լինել։
+
+10․ այո 
+
+11․ 12.
+    >    մեծ
+    <    փոքր
+    >=   մեծ կամ հավասար
+    <=   փոքր կամ հավասար
+    ==   ստուգում է միայն արժեքը կամ թայփը
+    ===  լրիվ հավասար
+    !    ժխտողական օպ  
+    !=   հավասար չի (==)
+    !=== հավասար չի (===)
+    ||   կամ կամ
+    &&   և և
+
+13.
+
+
+14.
+ Break continue օգտագործում ենք լուփերի մեջ։ Բրեյքն օգնում է կանգնեցնել լուփը, քընթինյուն օգնում է որոշակի քայլեր բաց թողնել
+
+15․
+  Օրինակ 16/0 կստանանք infinity: Js ում թիվը 0 ի բաժանելուց անվերջություն ենք ստանում։
+
+16․
+  NaN = not a number , օրինակ 2 * A 
+17.
+  Node Package Manager , Փաթեթների հսկայական գրադարան է, որտեղից կարող ենք ցանկացածը ներբեռնել մեր պրոեկտի համար։
+18․ 19․
+  npm init -yes , կամ կարող ենք հարցերին պատասխանել և npm ը ինսթալ անել մեր մոտ։ npm --save-dev անուն -> node modules , packagejson
+  jshint և էլի շատ շատ փաթեթներ կան, որ կարող ենք ինսթալ անել ու հեշտացնել մեր աշխատանքը։ Փեքիջները կարող են կարիք ունենալ
+  գլոբալ կամ լոկալ ինսթալի։
+20․ 
+  DevDependecy ծրագրավորողի կախվածություններ
+  Dependecy    պրոեկտի կախվածություններ 
+
+
+31. 
+
+ typeof true - boolean
+typeof false - boolean
+typeof function () {} - function
+typeof null - object
+typeof [] - object
+typeof {} - object
+typeof " " - string
+typeof 0 -  number
+typeof 1 - number
+typeof NaN - number
+typeof undefined - undefined
+typeof Object - function
+typeof Object() - Object
+typeof Array - function
+typeof Array() - object
+typeof Boolean - function
+typeof Boolean()- boolean
+
+32. NaN || 2 || undefined                     
+ 
+33. NaN && 2 && undefined                       
+
+34. 1 && 2 && 3  - 3                                   
+ 
+35. !1 && 2 || !3 - false                                 
+
+36. 25 || null && !3                            
+
+37. NaN || null || !3 || undefined || 5 -     
+
+38. NaN || null && !3 && undefined || 5 -   
+
+39. 5 === 5 && 3 > 1 || 5 - true
+
+40. 10 <= 8 && !9 || 10 > 5 - true
+41. 
+const a = true, b = false;
+console.log(!a)  - false
+console.log(!b)  - true
+
+42. 
+const a = true, b = false, c = 4;
+console.log(a || b); -true
+console.log(b || b); - false
+console.log((c>2) || (c<2)); -true
+
+43. 
+const a = true, b = false;
+const c = 4;
+console.log(a && a); - true
+console.log(a && b); - false
+console.log((c > 2) && (c < 2)); -false
+
+44. 
+const a = 2, b = 'hello';
+console.log(a !== 2); - false
+console.log(a !== '2'); -true
+console.log(b !== 'Hello'); -true
+
+45. 
+console.log( true || true ); - true
+console.log( false || true );- true
+console.log( true || false ); -true
+console.log( false || false ); - false
+
+46. 
+Ինչ կստանանք կոնսոլի մեջ
+let x = 4;
+do {
+     console.log("FALSE");
+     x++;
+} while (x > 4 && x > 6)
+
+կտպի FALSE
+
+47. 
+console.log( 1 || 0 );  - true
+console.log( null || 1 ); - true
+console.log( null || 0 || 1 ); - true
+console.log( undefined || null || 0 ); - false
+console.log( null || 2 && 3 || 4 ); - true
+
+48. 
+if (-1 || 0) console.log( 'first' ); - first
+if (-1 && 0) console.log( 'second' ); -
+if (null || -1 && 1) console.log( 'third' ); - third
+
+49. 
+console.log(!undefined); -true
+console.log(!null);  - true
+console.log(!20); - false
+console.log(!0);  - true
+console.log(!NaN); - true
+console.log(!{}); - false
+console.log(!''); - true
+console.log(!'OK'); - false
+console.log(!false); - true
+console.log(!true); - false
+
+50. 
+const a = 5, b = 10;
+(a != b) && (a < b); true
+(a > b) || (a == b); false
+(a < b) || (a == b); true
+!(a < b); false
+
